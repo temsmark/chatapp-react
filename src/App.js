@@ -5,12 +5,14 @@ import {Routes} from "react-router";
 
 
 
-import './App.css'
 import Chat from './pages/Chat'
 import Home from './pages/Home'
+import {Provider} from "react-redux";
+import store from "./app/store";
 
 function App() {
     return (
+        <Provider store={store}>
         <div className="centered-div">
         <BrowserRouter>
                 <Routes>
@@ -19,7 +21,7 @@ function App() {
                 </Routes>
         </BrowserRouter>
         </div>
-
+        </Provider>
     );
 }
 

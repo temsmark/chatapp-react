@@ -30,7 +30,6 @@ const Home=()=>{
 
         }
 
-
     }
 
     function addUserToLocalStorage(name) {
